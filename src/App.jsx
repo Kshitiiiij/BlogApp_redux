@@ -1,11 +1,10 @@
-import './App.css'
+import "./App.css";
+import PostsList from "./features/posts/PostsList";
 
 function App() {
-  return (
-    <>
-      
-    </>
-  )
+  return <main className="App">
+    <PostsList />
+  </main>;
 }
 
-export default App
+export default App;

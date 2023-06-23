@@ -49,6 +49,7 @@ const AddPostsForm = () => {
           value={userId}
           onChange={onAuthorChanged}
         >
+            <option value=""></option>
             {userOptions}
         </select>
         <label htmlFor="postContent">Content:</label>
@@ -59,8 +60,7 @@ const AddPostsForm = () => {
           onChange={onContentChanged}
         />
         <button type="button" onClick={onSavePostClicked}
-        disabled={!cantSave}
-        >
+        disabled={!cantSave}>
           Save Post
         </button>
       </form>
